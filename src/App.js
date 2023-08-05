@@ -11,6 +11,8 @@ const API_URL = 'https://www.omdbapi.com?apikey=ccff4200';
 
 
 const App = () => {
+
+    useEffect(() => {document.title = "Filmiration: Platform by Hashez";}, []);
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState([]);
 
@@ -21,10 +23,6 @@ const App = () => {
         setMovies(data.Search);
     }
 
-    useEffect(() => {
-        searchMovies('Spiderman')
-
-    }, [])
     return (
         <div className="app">
             <h1>Filmiration</h1>
