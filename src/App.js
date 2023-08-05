@@ -23,6 +23,11 @@ const App = () => {
         setMovies(data.Search);
     }
 
+     useEffect(() => {
+        searchMovies('Spiderman')
+
+    }, [])
+
     return (
         <div className="app">
             <h1>Filmiration</h1>
