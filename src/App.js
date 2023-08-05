@@ -11,8 +11,6 @@ const API_URL = 'https://www.omdbapi.com?apikey=ccff4200';
 
 
 const App = () => {
-
-    useEffect(() => {document.title = "Filmiration: Platform by Hashez";}, []);
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState([]);
 
